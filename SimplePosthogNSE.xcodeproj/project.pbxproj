@@ -14,6 +14,12 @@
 		226537202BFCBF550031D298 /* SimplePosthogNSETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265371F2BFCBF550031D298 /* SimplePosthogNSETests.swift */; };
 		2265372A2BFCBF550031D298 /* SimplePosthogNSEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226537292BFCBF550031D298 /* SimplePosthogNSEUITests.swift */; };
 		2265372C2BFCBF550031D298 /* SimplePosthogNSEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265372B2BFCBF550031D298 /* SimplePosthogNSEUITestsLaunchTests.swift */; };
+		2265373F2BFCBFAB0031D298 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265373E2BFCBFAB0031D298 /* NotificationService.swift */; };
+		226537432BFCBFAC0031D298 /* NSEPosthog.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2265373C2BFCBFAA0031D298 /* NSEPosthog.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FB3DA95D36DD1E8453DD02C /* Pods_SimplePosthogNSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC704C10A3047702E642DEB7 /* Pods_SimplePosthogNSE.framework */; };
+		5A148292820ACF61559DF4DE /* Pods_NSEPosthog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41596CFEA42BAAD636AB283 /* Pods_NSEPosthog.framework */; };
+		6640C796907EA65DD5457B62 /* Pods_SimplePosthogNSE_SimplePosthogNSEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A299EFDCFF1F166D05CAC0 /* Pods_SimplePosthogNSE_SimplePosthogNSEUITests.framework */; };
+		ED17D3584CAF64BFB64496FA /* Pods_SimplePosthogNSETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F798C29FCBC2F8161EE8DD44 /* Pods_SimplePosthogNSETests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = 226537092BFCBF510031D298;
 			remoteInfo = SimplePosthogNSE;
 		};
+		226537412BFCBFAC0031D298 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226537022BFCBF510031D298 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2265373B2BFCBFAA0031D298;
+			remoteInfo = NSEPosthog;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		226537472BFCBFAC0031D298 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				226537432BFCBFAC0031D298 /* NSEPosthog.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2265370A2BFCBF510031D298 /* SimplePosthogNSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePosthogNSE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +72,22 @@
 		226537252BFCBF550031D298 /* SimplePosthogNSEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePosthogNSEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		226537292BFCBF550031D298 /* SimplePosthogNSEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePosthogNSEUITests.swift; sourceTree = "<group>"; };
 		2265372B2BFCBF550031D298 /* SimplePosthogNSEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePosthogNSEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2265373C2BFCBFAA0031D298 /* NSEPosthog.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NSEPosthog.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2265373E2BFCBFAB0031D298 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		226537402BFCBFAB0031D298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2265374E2BFCC7200031D298 /* NSEPosthog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSEPosthog.entitlements; sourceTree = "<group>"; };
+		238DE57D2CDBC66A356BFDDE /* Pods-SimplePosthogNSE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePosthogNSE.release.xcconfig"; path = "Target Support Files/Pods-SimplePosthogNSE/Pods-SimplePosthogNSE.release.xcconfig"; sourceTree = "<group>"; };
+		26A299EFDCFF1F166D05CAC0 /* Pods_SimplePosthogNSE_SimplePosthogNSEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePosthogNSE_SimplePosthogNSEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A405F80DB64BB576CE342D0 /* Pods-NSEPosthog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSEPosthog.release.xcconfig"; path = "Target Support Files/Pods-NSEPosthog/Pods-NSEPosthog.release.xcconfig"; sourceTree = "<group>"; };
+		84C0C45F78EFB2FBCCFCE6D6 /* Pods-SimplePosthogNSETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePosthogNSETests.release.xcconfig"; path = "Target Support Files/Pods-SimplePosthogNSETests/Pods-SimplePosthogNSETests.release.xcconfig"; sourceTree = "<group>"; };
+		8A735DA4FD26A7792E83F486 /* Pods-NSEPosthog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSEPosthog.debug.xcconfig"; path = "Target Support Files/Pods-NSEPosthog/Pods-NSEPosthog.debug.xcconfig"; sourceTree = "<group>"; };
+		8E2501783D0575D5FB789F80 /* Pods-SimplePosthogNSE-SimplePosthogNSEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePosthogNSE-SimplePosthogNSEUITests.release.xcconfig"; path = "Target Support Files/Pods-SimplePosthogNSE-SimplePosthogNSEUITests/Pods-SimplePosthogNSE-SimplePosthogNSEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		958B1370ABBCD583797A14AE /* Pods-SimplePosthogNSE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePosthogNSE.debug.xcconfig"; path = "Target Support Files/Pods-SimplePosthogNSE/Pods-SimplePosthogNSE.debug.xcconfig"; sourceTree = "<group>"; };
+		C4D462CF025D8D66954395F7 /* Pods-SimplePosthogNSE-SimplePosthogNSEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePosthogNSE-SimplePosthogNSEUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimplePosthogNSE-SimplePosthogNSEUITests/Pods-SimplePosthogNSE-SimplePosthogNSEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C8AB05932C2D0E4C9844531A /* Pods-SimplePosthogNSETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePosthogNSETests.debug.xcconfig"; path = "Target Support Files/Pods-SimplePosthogNSETests/Pods-SimplePosthogNSETests.debug.xcconfig"; sourceTree = "<group>"; };
+		D41596CFEA42BAAD636AB283 /* Pods_NSEPosthog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSEPosthog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC704C10A3047702E642DEB7 /* Pods_SimplePosthogNSE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePosthogNSE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F798C29FCBC2F8161EE8DD44 /* Pods_SimplePosthogNSETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePosthogNSETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB3DA95D36DD1E8453DD02C /* Pods_SimplePosthogNSE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED17D3584CAF64BFB64496FA /* Pods_SimplePosthogNSETests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +111,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6640C796907EA65DD5457B62 /* Pods_SimplePosthogNSE_SimplePosthogNSEUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		226537392BFCBFAA0031D298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A148292820ACF61559DF4DE /* Pods_NSEPosthog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +132,10 @@
 				2265370C2BFCBF510031D298 /* SimplePosthogNSE */,
 				2265371E2BFCBF550031D298 /* SimplePosthogNSETests */,
 				226537282BFCBF550031D298 /* SimplePosthogNSEUITests */,
+				2265373D2BFCBFAB0031D298 /* NSEPosthog */,
 				2265370B2BFCBF510031D298 /* Products */,
+				2265374B2BFCC6270031D298 /* Frameworks */,
+				6E8600C5749BCED84711D6C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +145,7 @@
 				2265370A2BFCBF510031D298 /* SimplePosthogNSE.app */,
 				2265371B2BFCBF550031D298 /* SimplePosthogNSETests.xctest */,
 				226537252BFCBF550031D298 /* SimplePosthogNSEUITests.xctest */,
+				2265373C2BFCBFAA0031D298 /* NSEPosthog.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +187,43 @@
 			path = SimplePosthogNSEUITests;
 			sourceTree = "<group>";
 		};
+		2265373D2BFCBFAB0031D298 /* NSEPosthog */ = {
+			isa = PBXGroup;
+			children = (
+				2265374E2BFCC7200031D298 /* NSEPosthog.entitlements */,
+				2265373E2BFCBFAB0031D298 /* NotificationService.swift */,
+				226537402BFCBFAB0031D298 /* Info.plist */,
+			);
+			path = NSEPosthog;
+			sourceTree = "<group>";
+		};
+		2265374B2BFCC6270031D298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D41596CFEA42BAAD636AB283 /* Pods_NSEPosthog.framework */,
+				DC704C10A3047702E642DEB7 /* Pods_SimplePosthogNSE.framework */,
+				26A299EFDCFF1F166D05CAC0 /* Pods_SimplePosthogNSE_SimplePosthogNSEUITests.framework */,
+				F798C29FCBC2F8161EE8DD44 /* Pods_SimplePosthogNSETests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E8600C5749BCED84711D6C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A735DA4FD26A7792E83F486 /* Pods-NSEPosthog.debug.xcconfig */,
+				5A405F80DB64BB576CE342D0 /* Pods-NSEPosthog.release.xcconfig */,
+				958B1370ABBCD583797A14AE /* Pods-SimplePosthogNSE.debug.xcconfig */,
+				238DE57D2CDBC66A356BFDDE /* Pods-SimplePosthogNSE.release.xcconfig */,
+				C4D462CF025D8D66954395F7 /* Pods-SimplePosthogNSE-SimplePosthogNSEUITests.debug.xcconfig */,
+				8E2501783D0575D5FB789F80 /* Pods-SimplePosthogNSE-SimplePosthogNSEUITests.release.xcconfig */,
+				C8AB05932C2D0E4C9844531A /* Pods-SimplePosthogNSETests.debug.xcconfig */,
+				84C0C45F78EFB2FBCCFCE6D6 /* Pods-SimplePosthogNSETests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,13 +231,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2265372F2BFCBF550031D298 /* Build configuration list for PBXNativeTarget "SimplePosthogNSE" */;
 			buildPhases = (
+				4E1DEAD7F756C222D7CDF50A /* [CP] Check Pods Manifest.lock */,
 				226537062BFCBF510031D298 /* Sources */,
 				226537072BFCBF510031D298 /* Frameworks */,
 				226537082BFCBF510031D298 /* Resources */,
+				226537472BFCBFAC0031D298 /* Embed Foundation Extensions */,
+				9002FCDA11E426BEDB18105F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				226537422BFCBFAC0031D298 /* PBXTargetDependency */,
 			);
 			name = SimplePosthogNSE;
 			productName = SimplePosthogNSE;
@@ -153,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 226537322BFCBF550031D298 /* Build configuration list for PBXNativeTarget "SimplePosthogNSETests" */;
 			buildPhases = (
+				D555FF91716C5C881FB79860 /* [CP] Check Pods Manifest.lock */,
 				226537172BFCBF550031D298 /* Sources */,
 				226537182BFCBF550031D298 /* Frameworks */,
 				226537192BFCBF550031D298 /* Resources */,
@@ -171,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 226537352BFCBF550031D298 /* Build configuration list for PBXNativeTarget "SimplePosthogNSEUITests" */;
 			buildPhases = (
+				F9C331C7347A5E8883797579 /* [CP] Check Pods Manifest.lock */,
 				226537212BFCBF550031D298 /* Sources */,
 				226537222BFCBF550031D298 /* Frameworks */,
 				226537232BFCBF550031D298 /* Resources */,
@@ -184,6 +285,24 @@
 			productName = SimplePosthogNSEUITests;
 			productReference = 226537252BFCBF550031D298 /* SimplePosthogNSEUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2265373B2BFCBFAA0031D298 /* NSEPosthog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226537442BFCBFAC0031D298 /* Build configuration list for PBXNativeTarget "NSEPosthog" */;
+			buildPhases = (
+				A6C08B3F6E27A5C2A9A7E3C8 /* [CP] Check Pods Manifest.lock */,
+				226537382BFCBFAA0031D298 /* Sources */,
+				226537392BFCBFAA0031D298 /* Frameworks */,
+				2265373A2BFCBFAA0031D298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSEPosthog;
+			productName = NSEPosthog;
+			productReference = 2265373C2BFCBFAA0031D298 /* NSEPosthog.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -206,6 +325,9 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 226537092BFCBF510031D298;
 					};
+					2265373B2BFCBFAA0031D298 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 				};
 			};
 			buildConfigurationList = 226537052BFCBF510031D298 /* Build configuration list for PBXProject "SimplePosthogNSE" */;
@@ -224,6 +346,7 @@
 				226537092BFCBF510031D298 /* SimplePosthogNSE */,
 				2265371A2BFCBF550031D298 /* SimplePosthogNSETests */,
 				226537242BFCBF550031D298 /* SimplePosthogNSEUITests */,
+				2265373B2BFCBFAA0031D298 /* NSEPosthog */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +375,122 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2265373A2BFCBFAA0031D298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E1DEAD7F756C222D7CDF50A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimplePosthogNSE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9002FCDA11E426BEDB18105F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimplePosthogNSE/Pods-SimplePosthogNSE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimplePosthogNSE/Pods-SimplePosthogNSE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimplePosthogNSE/Pods-SimplePosthogNSE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6C08B3F6E27A5C2A9A7E3C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSEPosthog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D555FF91716C5C881FB79860 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimplePosthogNSETests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C331C7347A5E8883797579 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimplePosthogNSE-SimplePosthogNSEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		226537062BFCBF510031D298 /* Sources */ = {
@@ -281,6 +519,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		226537382BFCBFAA0031D298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2265373F2BFCBFAB0031D298 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +539,11 @@
 			isa = PBXTargetDependency;
 			target = 226537092BFCBF510031D298 /* SimplePosthogNSE */;
 			targetProxy = 226537262BFCBF550031D298 /* PBXContainerItemProxy */;
+		};
+		226537422BFCBFAC0031D298 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2265373B2BFCBFAA0031D298 /* NSEPosthog */;
+			targetProxy = 226537412BFCBFAC0031D298 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,14 +664,17 @@
 		};
 		226537302BFCBF550031D298 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958B1370ABBCD583797A14AE /* Pods-SimplePosthogNSE.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SimplePosthogNSE/SimplePosthogNSE.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimplePosthogNSE/Preview Content\"";
-				DEVELOPMENT_TEAM = 78Q6NF95Y6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -434,15 +688,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,14 +707,17 @@
 		};
 		226537312BFCBF550031D298 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 238DE57D2CDBC66A356BFDDE /* Pods-SimplePosthogNSE.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SimplePosthogNSE/SimplePosthogNSE.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimplePosthogNSE/Preview Content\"";
-				DEVELOPMENT_TEAM = 78Q6NF95Y6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -472,15 +731,17 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,6 +750,7 @@
 		};
 		226537332BFCBF550031D298 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AB05932C2D0E4C9844531A /* Pods-SimplePosthogNSETests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,13 +758,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78Q6NF95Y6;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,6 +775,7 @@
 		};
 		226537342BFCBF550031D298 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C0C45F78EFB2FBCCFCE6D6 /* Pods-SimplePosthogNSETests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,13 +783,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78Q6NF95Y6;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSETests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,19 +800,21 @@
 		};
 		226537362BFCBF550031D298 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D462CF025D8D66954395F7 /* Pods-SimplePosthogNSE-SimplePosthogNSEUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78Q6NF95Y6;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -557,23 +824,92 @@
 		};
 		226537372BFCBF550031D298 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2501783D0575D5FB789F80 /* Pods-SimplePosthogNSE-SimplePosthogNSEUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 78Q6NF95Y6;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSEUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SimplePosthogNSE;
+			};
+			name = Release;
+		};
+		226537452BFCBFAC0031D298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A735DA4FD26A7792E83F486 /* Pods-NSEPosthog.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NSEPosthog/NSEPosthog.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Q6NF95Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NSEPosthog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NSEPosthog;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSE.NSEPosthog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		226537462BFCBFAC0031D298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A405F80DB64BB576CE342D0 /* Pods-NSEPosthog.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NSEPosthog/NSEPosthog.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 78Q6NF95Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NSEPosthog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NSEPosthog;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valrsoft.SimplePosthogNSE.NSEPosthog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -612,6 +948,15 @@
 			buildConfigurations = (
 				226537362BFCBF550031D298 /* Debug */,
 				226537372BFCBF550031D298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226537442BFCBFAC0031D298 /* Build configuration list for PBXNativeTarget "NSEPosthog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226537452BFCBFAC0031D298 /* Debug */,
+				226537462BFCBFAC0031D298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
